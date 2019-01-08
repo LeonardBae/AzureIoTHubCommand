@@ -44,7 +44,7 @@ namespace IoTHubCommand
         }
         public async Task receiveCommandFromAzure()
         {
-            DeviceClient deviceClient = DeviceClient.CreateFromConnectionString("HostName=mdsrmsolutions.azure-devices.net;DeviceId=rpmethod;SharedAccessKey=vKZ/g7AmG229c2n/xR6OU/xZhAqSW676seVORpIfpZk=", TransportType.Mqtt);
+            DeviceClient deviceClient = DeviceClient.CreateFromConnectionString("====insert your device connection string====", TransportType.Mqtt);
 
             Message receiveMessage;
             string messageData;
